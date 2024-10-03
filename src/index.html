@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Salário Líquido</title>
+    <!-- Importando Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="container mt-5">
+        <h1 class="text-center">Calculadora de Salário Líquido</h1>
+        
+        <!-- Formulário -->
+        <form onsubmit="event.preventDefault(); calcularSalarioLiquido();">
+            <div class="form-group">
+                <label for="salariobruto">Salário Bruto</label>
+                <input type="number" step="0.01" class="form-control" id="salariobruto" placeholder="Informe o salário bruto" required>
+            </div>
+
+            <div class="form-group">
+                <label for="dependentes">Número de Dependentes</label>
+                <input type="number" class="form-control" id="dependentes" placeholder="Informe o número de dependentes">
+            </div>
+
+            <div class="form-group">
+                <label for="pensao">Pensão Alimentícia</label>
+                <input type="number" step="0.01" class="form-control" id="pensao" placeholder="Informe o valor da pensão">
+            </div>
+
+            <div class="form-group">
+                <label for="previdenciaprivada">Previdência Privada</label>
+                <input type="number" step="0.01" class="form-control" id="previdenciaprivada" placeholder="Informe o valor da previdência privada">
+            </div>
+
+            <div class="form-group">
+                <label for="outrosdescontos">Outros Descontos</label>
+                <input type="number" step="0.01" class="form-control" id="outrosdescontos" placeholder="Informe o valor de outros descontos">
+            </div>
+
+            <!-- Botão para calcular -->
+            <button type="submit" class="btn btn-primary btn-block">Calcular Salário Líquido</button>
+        </form>
+
+        <!-- Tabela de resultados -->
+        <div id="resultadoTabela" class="mt-4"></div>
+    </div>
+
+    <!-- Importando Bootstrap JS e dependências -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
