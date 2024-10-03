@@ -7,6 +7,7 @@
     <!-- Importando Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
+
 </head>
 <body>
 
@@ -17,7 +18,7 @@
         <form onsubmit="event.preventDefault(); calcularSalarioLiquido();">
             <div class="form-group">
                 <label for="salariobruto">Salário Bruto</label>
-                <input type="number" step="0.01" class="form-control" id="salariobruto" placeholder="Informe o salário bruto" required>
+                <input type="text" class="form-control" id="salariobruto" placeholder="Informe o salário bruto" required>
             </div>
 
             <div class="form-group">
@@ -27,17 +28,17 @@
 
             <div class="form-group">
                 <label for="pensao">Pensão Alimentícia</label>
-                <input type="number" step="0.01" class="form-control" id="pensao" placeholder="Informe o valor da pensão">
+                <input type="text" class="form-control" id="pensao" placeholder="Informe o valor da pensão">
             </div>
 
             <div class="form-group">
                 <label for="previdenciaprivada">Previdência Privada</label>
-                <input type="number" step="0.01" class="form-control" id="previdenciaprivada" placeholder="Informe o valor da previdência privada">
+                <input type="text" class="form-control" id="previdenciaprivada" placeholder="Informe o valor da previdência privada">
             </div>
 
             <div class="form-group">
                 <label for="outrosdescontos">Outros Descontos</label>
-                <input type="number" step="0.01" class="form-control" id="outrosdescontos" placeholder="Informe o valor de outros descontos">
+                <input type="text" class="form-control" id="outrosdescontos" placeholder="Informe o valor de outros descontos">
             </div>
 
             <!-- Botão para calcular -->
@@ -45,10 +46,10 @@
         </form>
 
         <!-- Tabela de resultados -->
-        <div id="resultadoTabela" class="mt-4"></div>
+        <div id="resultadoTabela"></div>
     </div>
 
-    <!-- Importando Bootstrap JS e dependências -->
+    <!-- Importando Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
