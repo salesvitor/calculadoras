@@ -116,7 +116,7 @@ function calcularSalarioLiquido() {
                 </tr>
                 <tr class="font-weight-bold">
                     <td>Salário Líquido</td>
-                    <td>${formatarValorBRL(salarioLiquido)}</td>
+                    <td colspan="2">${formatarValorBRL(salarioLiquido)}</td>
                     <td></td>
                 </tr>
             </tbody>
