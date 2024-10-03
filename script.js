@@ -78,46 +78,45 @@ function calcularSalarioLiquido() {
         <table class="table table-bordered mt-4">
             <thead class="thead-light">
                 <tr>
-                    <th>Descrição</th>
-                    <th>Proventos (R$)</th>
-                    <th>Descontos (R$)</th>
+                    <th class="text-center">Descrição</th>
+                    <th class="text-center">Proventos (R$)</th>
+                    <th class="text-center">Descontos (R$)</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td>Salário Bruto</td>
-                    <td>${formatarValorBRL(salarioBruto)}</td>
+                    <td class="text-center">${formatarValorBRL(salarioBruto)}</td>
                     <td></td>
                 </tr>
                 <tr>
                     <td>INSS</td>
                     <td></td>
-                    <td>${formatarValorBRL(inss)}</td>
+                    <td class="text-center">${formatarValorBRL(inss)}</td>
                 </tr>
                 <tr>
                     <td>IRPF</td>
                     <td></td>
-                    <td>${formatarValorBRL(irpf)}</td>
+                    <td class="text-center">${formatarValorBRL(irpf)}</td>
                 </tr>
                 <tr>
                     <td>Pensão Alimentícia</td>
                     <td></td>
-                    <td>${formatarValorBRL(pensao)}</td>
+                    <td class="text-center">${formatarValorBRL(pensao)}</td>
                 </tr>
                 <tr>
                     <td>Previdência Privada</td>
                     <td></td>
-                    <td>${formatarValorBRL(previdenciaPrivada)}</td>
+                    <td class="text-center">${formatarValorBRL(previdenciaPrivada)}</td>
                 </tr>
                 <tr>
                     <td>Outros Descontos</td>
                     <td></td>
-                    <td>${formatarValorBRL(outrosDescontos)}</td>
+                    <td class="text-center">${formatarValorBRL(outrosDescontos)}</td>
                 </tr>
                 <tr class="font-weight-bold">
                     <td>Salário Líquido</td>
-                    <td colspan="2">${formatarValorBRL(salarioLiquido)}</td>
-                    <td></td>
+                    <td colspan="2" class="text-center">${formatarValorBRL(salarioLiquido)}</td>
                 </tr>
             </tbody>
         </table>
